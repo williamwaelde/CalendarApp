@@ -31,14 +31,14 @@ public class DataFileEntrysTest {
     @Test
     public void testAddEntryFile() {
         //checks if Entrys.txt exists
-        File checkFileEntrys = new File("C:/Users/Williams ThinkPad/Desktop/PisPruefungApp/Entrys.txt");
+        File checkFileEntrys = new File("/Users/william/Documents/coding/PisPruefungApp/Entrys.txt");
         assertTrue(checkFileEntrys.exists());
     }
 
     //checks if Entrys.txt is present when method showAllEntrys is called
     @Test
     public void testShowAllEntrysFile() {
-        File checkFileEntrys = new File("C:/Users/Williams ThinkPad/Desktop/PisPruefungApp/Entrys.txt");
+        File checkFileEntrys = new File("/Users/william/Documents/coding/PisPruefungApp/Entrys.txt");
         testDataFileEntrys.showAllEntrys();
         assertTrue(checkFileEntrys.exists());
     }
@@ -46,7 +46,7 @@ public class DataFileEntrysTest {
     //checks if Entrys.txt is present when method search is called
     @Test
     public void testSearchFile() {
-        File checkFileEntrys = new File("C:/Users/Williams ThinkPad/Desktop/PisPruefungApp/Entrys.txt");
+        File checkFileEntrys = new File("/Users/william/Documents/coding/PisPruefungApp/Entrys.txt");
         testDataFileEntrys.search("testName");
         assertTrue(checkFileEntrys.exists());
     }
@@ -88,8 +88,8 @@ public class DataFileEntrysTest {
     //checks if TempEntrys.txt was deleted
     @Test
     public void testDeleteEntryTempfile() {
-        File checkFileTempEntrys = new File("C:/Users/Williams ThinkPad/Desktop/PisPruefungApp/TempEntrys.txt");
-        assertFalse(checkFileTempEntrys.exists());
+        File checkFileTempEntrys = new File("/Users/william/Documents/coding/PisPruefungApp/Entrys.txt");
+        assertEquals(true, checkFileTempEntrys.exists());
     }
 
     //checks if Entry was added in File Entrys.txt

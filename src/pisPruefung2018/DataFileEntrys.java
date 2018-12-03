@@ -11,7 +11,7 @@ public class DataFileEntrys {
     public void addEntry(String input) {
         try {
             //creates new File with path: C:/Users/Williams ThinkPad/Desktop/PisPruefungApp/Entrys.txt
-            File newFile = new File("C:/Users/Williams ThinkPad/Desktop/PisPruefungApp/Entrys.txt");
+            File newFile = new File("/Users/william/Documents/coding/PisPruefungApp/Entrys.txt");
 
             //when File does not exists it will be created
             if (!newFile.exists()) {
@@ -35,7 +35,7 @@ public class DataFileEntrys {
         String text = ""; //empty string for later use
         try {
             //creates Filereader for Entrys.txt file
-            FileReader fileR = new FileReader("C:/Users/Williams ThinkPad/Desktop/PisPruefungApp/Entrys.txt");
+            FileReader fileR = new FileReader("/Users/william/Documents/coding/PisPruefungApp/Entrys.txt");
             //creates BufferedReader for fileR
             BufferedReader bReader = new BufferedReader(fileR);
             //adds line to string (line equals bReader Line)
@@ -59,7 +59,7 @@ public class DataFileEntrys {
         String result = ""; //empty string for later use
         try {
             //scanner for File entrys.txt
-            Scanner sc = new Scanner(new File("C:/Users/Williams ThinkPad/Desktop/PisPruefungApp/Entrys.txt"));
+            Scanner sc = new Scanner(new File("/Users/william/Documents/coding/PisPruefungApp/Entrys.txt"));
             //as long as scanner hasNext String line equals sacanner next Line
             //if String line contains searchString(input) set String result to value of line
             while (sc.hasNext()) {
