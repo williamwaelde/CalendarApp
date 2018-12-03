@@ -1,0 +1,5 @@
+Name: Turing, Surname: Alan, Phone Number: 1912, E-Mail: alan@turing.com
+Name: Von Neunmann, Surname: John, Phone Number: 19031957, E-Mail: neumann@john.com
+Name: Backus, Surname: John, Phone Number: 19242007, E-Mail: john@backus
+Name: Wozniak, Surname: Steve, Phone Number: 195068, E-Mail: wozniak@apple.com
+Name: Zuse, Surname: Konrad, Phone Number: 19101995, E-Mail: konrad@zuse.de
